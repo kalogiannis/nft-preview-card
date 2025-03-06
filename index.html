@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    :root{
+      --Soft-blue: hsl(215, 51%, 70%);
+      --Cyan: hsl(178, 100%, 50%);
+      --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+      --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+      --Very-dark-blue-line: hsl(215, 32%, 27%);
+      --White: hsl(0, 0%, 100%);
+    }
+    body{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      background:var(--Very-dark-blue-main-BG);
+      display: grid;
+      place-items: center;
+      height: 100vh;
+    }
+    html{
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-weight: 300;
+    }
+    main{
+      padding: 20px;
+      border-radius: 10px;
+      width: 80vw;
+      max-width: 400px;
+      background: var(--Very-dark-blue-card-BG);
+    }
+    .hero img{
+      width: 100%;
+    }
+
+    .details h1{
+      color: var(--White);
+      font-weight: 600;
+    }
+    .details p{
+      color: var(--Soft-blue);
+      font-size: 18px;
+
+    }
+
+    .box{
+      display: flex;
+      justify-content: space-between;
+    }
+    .eth{
+      color:var(--Cyan);
+      font-weight: 400;
+    }
+    .days-left{
+      color:var(--Soft-blue)
+    }
+  
+   
+    .footer {
+      display: flex;
+      align-items: center;
+    }
+    .footer img{
+      width: 10%;
+      border: 1px solid var(--White);
+      border-radius: 50%;
+    }
+    .footer p{
+      color: var(--Soft-blue);
+      margin-left: 16px;
+    }
+    .footer p span{
+      color: var(--White);
+    }
+    .eth, .days-left{
+      display: flex;
+      gap: 8px;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <img src="./images/image-equilibrium.jpg" alt="">
+    </div>
+    <div class="details">
+      <h1>Equilibrium #3429</h1>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="box">
+        <span class="eth"><img src="./images/icon-ethereum.svg" alt=""> 0.041 ETH</span>
+        <span class="days-left"><img src="./images/icon-clock.svg" alt=""> 3 days left</span>
+      </div>
+    </div>
+    <hr/>
+    <div class="footer">
+      <img src="./images/image-avatar.png" alt="">
+      <p>Creation of <span>Jules Wyvern</span></p>
+    </div>
+  </main>
+
+</body>
+</html>
